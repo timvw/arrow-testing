@@ -1,0 +1,122 @@
+{
+  "format-version" : 1,
+  "table-uuid" : "a0a54cda-de96-43e5-bb8c-936aa7469c47",
+  "location" : "s3://data/iceberg/db/COVID-19_NYT",
+  "last-updated-ms" : 1667531437359,
+  "last-column-id" : 6,
+  "schema" : {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "date",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "county",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "state",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "fips",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 5,
+      "name" : "cases",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 6,
+      "name" : "deaths",
+      "required" : false,
+      "type" : "int"
+    } ]
+  },
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "date",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "county",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "state",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "fips",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 5,
+      "name" : "cases",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 6,
+      "name" : "deaths",
+      "required" : false,
+      "type" : "int"
+    } ]
+  } ],
+  "partition-spec" : [ ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "timvw"
+  },
+  "current-snapshot-id" : 5880370803526636531,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 5880370803526636531,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "snapshot-id" : 5880370803526636531,
+    "timestamp-ms" : 1667531437359,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1667531430380",
+      "changed-partition-count" : "0",
+      "total-records" : "0",
+      "total-files-size" : "0",
+      "total-data-files" : "0",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3://data/iceberg/db/COVID-19_NYT/metadata/snap-5880370803526636531-1-9221615b-12ad-4078-8717-9b3b8c93e141.avro",
+    "schema-id" : 0
+  } ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1667531437359,
+    "snapshot-id" : 5880370803526636531
+  } ],
+  "metadata-log" : [ ]
+}
